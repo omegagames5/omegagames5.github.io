@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<title>OmegaGames</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://omegagames5.github.io/resources/ogbg0.png");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">OmegaGames</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+	  <a href="https://omegagames5.github.io/home/ip.html" class="w3-bar-item w3-button">IP</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Комманда</a>
+      <a href="#Donate" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Донат</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Связаться с нами</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="https://omegagames5.github.io/home/ip.html" class="w3-bar-item w3-button">IP</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Комманда</a>
+  <a href="#Donate" onclick="w3_close()" class="w3-bar-item w3-button">Донат</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Связаться с нами</a>
+      
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Здравствуйте!</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Здравствуйте!</span><br>
+    <span class="w3-large">Мы рады видеть вас здесь!</span>
+	
+	<span id="ip"> </span>
+	
+    <p><a href="https://omegagames5.github.io/home/ip.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Показать IP</a></p>
+  </div> 
+  
+  
+  <script>
+  
+	function showIP(){
+	
+	var el = document.getElementById("ip");
+	
+	el.innerHTML("OmegaGames.ml");
+	
+	}
+  
+  </script>
+  
+</header>
+
+<!-- About Section -->
+
+
+<!-- Promo Section - "We know design" -->
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Наша комманда</h3>
+  
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://omegagames5.github.io/resources/65647m.png" alt="65647m" style="width:100%">
+        <div class="w3-container">
+          <h3>65647m</h3>
+          <p class="w3-opacity">DEVELOPER</p>
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://omegagames5.github.io/resources/nineUS.png" alt="nineUS" style="width:100%">
+        <div class="w3-container">
+          <h3>nineUS</h3>
+          <p class="w3-opacity">DEVELOPER</p>
+          
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://omegagames5.github.io/resources/unknown.png" alt="Noctalium" style="width:100%">
+        <div class="w3-container">
+          <h3>Noctalium</h3>
+          <p class="w3-opacity">DEVELOPER</p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://omegagames5.github.io/resources/unknown.png" alt="Nobody" style="width:100%">
+        <div class="w3-container">
+          <h3>Пусто</h3>
+          <p class="w3-opacity">...</p>
+          <p>У вас есть шанс!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section "Statistics" -->
+
+
+<!-- Work Section -->
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="Donate">
+  <h3>Донат</h3>
+  
+  <p><a href="https://omegagames5.github.io/donate.html" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Посмотреть список доната</a></p>
+  
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Связаться с нами</h3>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-half">
+      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Россия, Самарская обл.</p>
+      <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Телефон: +7 (***) ***-**-** </p>
+      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Эл. Почта: omegagames.helpers@gmail.com</p>
+	  <br>
+	  <br>
+	  <a href="mailto:omegagames.helpers@gmail.com">
+	  
+		Написать нам
+	  
+	  </a>
+      <br>
+    </div>
+    <div class="w3-half">
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Наверх</a>
+  <div class="w3-xlarge w3-section">
+  </div>
+</footer>
+ 
+
+<script>
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
