@@ -18,9 +18,9 @@
 		
 			<div align="middle">
 			
-				<img src="favicon.png" id="lavaLuckyBtn1" onClick="prize();">
+				<img src="favicon.png" id="lavaLuckyBtn1" onClick="prize();" alt="LavaLucky">
 			
-				<span id="prize">  </span>
+				<span id="prize"> Вы ничего ни выиграли! Пока что...</span>
 			
 			</div>
 		
@@ -37,7 +37,7 @@
 					
 					i = Math.random() * 6;
 					
-					i = Math.ceil(i);
+					i = Math.floor(i);
 					
 					var el0 = document.getElementById("prize");
 					el0.innerHTML = "Приз номер " + i;
