@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+	<html>
+	
+		<head>
+		
+			<title>
+			
+				OmegaGames - Lava Lucky
+			
+			</title>
+			
+			<link rel="icon" type="image/png" href="favicon.png">
+		
+		</head>
+		
+		<body>
+		
+			<div align="middle">
+			
+				<img src="favicon.png" id="lavaLuckyBtn1" onClick="prize();">
+			
+				<span id="prize">  </span>
+			
+			</div>
+		
+			<script>
+			
+				
+				var prizeList = ["https://omegagames5.github.io/lavalucky/Prizes/casedrop.wav","https://omegagames5.github.io/lavalucky/Prizes/OG-Report.exe","https://omegagames5.github.io/lavalucky/Prizes/OmegaGames_PvB_CaseRandom.exe","https://omegagames5.github.io/lavalucky/Prizes/OmegaGames-PvB_Case.exe","https://omegagames5.github.io/lavalucky/Prizes/OmegaGames_PvB_CaseRandom.exe","https://omegagames5.github.io/lavalucky/Prizes/OmegaGamesDonateCase.exe"];
+				var i = 0;
+				
+				console.log("Начало...");
+				
+				function prize () {
+				
+					
+					i = Math.random() * 6;
+					
+					i = Math.ceil(i);
+					
+					var el0 = document.getElementById("prize");
+					el0.innerHTML = "Приз номер " + i;
+					console.log("(Prize) " + i);
+					
+					window.location.assign(prizeList[i]);
+					
+				}
+			
+			</script>
+			
+			  <!-- + "                                                                                                                                                                                                                     (URL) " + prizeList[i] --!>
+			<style>
+			
+				
+				* {
+					font-family: 'Roboto Condensed', sans-serif;
+				}
+				
+				body {
+					display: block;
+					border: none;
+					background: #C6FFDD;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: white;
+					outline: none;
+					font-size: 26px;
+				}
+				
+				#prize {
+					display: block;
+					border: none;
+					background: #12c2e9;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: white;
+					outline: none;
+					font-size: 26px;
+				}
+				
+			
+			</style>
+		
+		</body>
+	
+	</html>
