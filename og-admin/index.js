@@ -39,3 +39,21 @@ el2.enabled = true;
 }
 
 }
+
+function GoToDownloadsList() {
+
+window.location.assign("https://omegagames5.github.io/og-admin/x68D-XxcF-8X9e-9uYe-oPeT-9U6T/downloadList");
+	
+}
+
+function OgKitAdminBeta() {
+
+window.location.assign("https://omegagames5.github.io/og-admin/x68D-XxcF-8X9e-9uYe-oPeT-9U6T/downloadList/Omega_Games_Kit___Admin-Beta.exe");
+
+}
+
+function OgKitAdminBetaCode() {
+
+window.location.assign("https://omegagames5.github.io/og-admin/x68D-XxcF-8X9e-9uYe-oPeT-9U6T/downloadList/activatecode.data");
+
+}
