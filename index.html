@@ -13,6 +13,7 @@
 
 	
 	<h1>Обратный отчет времени</h1>
+	<h2>До удаления групп:</h2>
 	<!-- Отображение таймера обратного отсчета в элементе -->
 					<p id="demo">⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰</p>
 					
@@ -21,6 +22,8 @@
 <img src="alarm.gif">
 
 </div>
+<!--="true"="true"src="Sound_15028.mp3"audio/music.mp3Обратный отчет времени-->
+    <audio loop id="Audio1111111111111111" autoplay><source src="Sound_15028.mp3" type="audio/mpeg"></audio>    
 
 	</body>
 	
@@ -28,7 +31,11 @@
 
 <script>
 
+document.getElementById('Audio1111111111111111').play();
 
+//var audio = new Audio('alarm.mp3');
+
+//audio.play();
 
 // Установите дату, до которой мы ведем обратный отсчет
 var countDownDate = new Date("May 10, 2021 04:00:00").getTime();
@@ -63,11 +70,11 @@ var x = setInterval(function() {
   }
 }, 1000);
 
-var var1 = document.createElement("Sound_15028.mp3");
+//var var1 = document.createElement("Sound_15028.mp3");
 
-var1.loop = true;
+//var1.loop = true;
 
-var1.play();//("AUDIO");
+//var1.play();//("AUDIO");
 
 </script>
 </html>
