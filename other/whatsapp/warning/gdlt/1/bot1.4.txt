@@ -1,0 +1,109 @@
+import discord
+from discord.ext import commands
+from discord.ext.commands import Bot
+import logging
+import datetime
+
+
+logger = logging.getLogger('discord')
+logger.setLevel(logging.DEBUG)
+handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
+handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
+logger.addHandler(handler)
+
+
+Bot = commands.Bot(command_prefix= "!")
+
+time = datetime.datetime.now()
+
+@Bot.event
+async def on_ready():
+    print("[", time , "]")
+    print("Bot is online!!!   Start Date is", "[", time , "]", )
+    print("[", time , "]", "Bot name is 6BotONE1")
+    with open("log.log", "w") as file:
+        file.write('  ....1)Bot is online!!!')
+    with open("log.log", "a") as file:
+        file.write('  ....2).......Bot name is 6BotONE1')    
+
+@Bot.command()
+async def test(ctx):
+    author = ctx.message.author
+    await ctx.send(f"1234567890 ..... Working! <@{author.id}>", file=discord.File("icon.png"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "      Кто-то выполнил комманду : !test")
+    with open("log.log", "a") as file:
+        file.write('  ....3)....Кто-то выполнил комманду : !test')
+    
+@Bot.command()
+async def cat(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> ..... (Ищет кота).......(Нашёл кота)", file=discord.File("cat1.jpg"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !cat")
+    with open("log.log", "a") as file:
+        file.write('  ....4)....Кто-то выполнил комманду : !cat')
+
+@Bot.command()
+async def code(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Bot maked on Python 3.8.1 by 65647m (Artem)", file=discord.File("pythonlogo1.png"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !code")
+    with open("log.log", "a") as file:
+        file.write('  ....5)....Кто-то выполнил комманду : !code')
+
+@Bot.command()
+async def portal(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Вот картинка с порталом из портал 2 от 65647m                         <GLaDOS> А, это ты!", file=discord.File("portal2.png"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !portal")
+    with open("log.log", "a") as file:
+        file.write('  ....6)....Кто-то выполнил комманду : !portal')
+
+@Bot.command()
+async def dd(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Вот рабочий стол 65647m...                    Ой, ошибка", file=discord.File("dd.png"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !dd")
+    with open("log.log", "a") as file:
+        file.write('  ....7)....Кто-то выполнил комманду : !dd')
+
+@Bot.command()
+async def dcmd(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Вот консоль 6BotONE1...", file=discord.File("dcmd.png"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !dcmd")
+    with open("log.log", "a") as file:
+        file.write('  ....8)....Кто-то выполнил комманду : !dcmd')
+
+@Bot.command()
+async def discordraresong(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Вот редкая мелодия дискорд!", file=discord.File("discord1.wav"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !discordraresong")
+    with open("log.log", "a") as file:
+        file.write('  ....9)....Кто-то выполнил комманду : !discordraresong')
+
+@Bot.command()
+async def log(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Вот discord.log!", file=discord.File("discord.log"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !log")
+    with open("log.log", "a") as file:
+        file.write('  ....10)....Кто-то выполнил комманду : !log')
+
+@Bot.command()
+async def fouros(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Вот FourOS.zip!", file=discord.File("FourOS.zip"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !fouros")
+    with open("log.log", "a") as file:
+        file.write('  ....11)....Кто-то выполнил комманду : !fouros')
+
+@Bot.command()
+async def random(ctx):
+    author = ctx.message.author
+    await ctx.send(f"<@{author.id}> Команда не доступна((", file=discord.File("dderr.PNG"))
+    print("[", time , "]", "   (", ctx.message.author , ")   ", "Кто-то выполнил комманду : !random")
+    with open("log.log", "a") as file:
+        file.write('  ....12)....Кто-то выполнил комманду : !random')
+    
+Bot.run(open('token.txt', 'r').readline())
