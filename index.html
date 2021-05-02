@@ -1,80 +1,99 @@
-<html>
-	<head>
+<!DOCTYPE html>
+<html lang="en">
+
+	<head bgcolor='#AFAFAF'>
+	
 		<title>
-			⚠️⏰ -- ГРУППА WHATSAPP ЗАКРЫВАЕТСЯ -- ⚠️⏰
+			OmegaGames - main
 		</title>
+		
+		<!-- <a href="https://omegagames5.github.io/home/">Главная</a>
+		<h1>--</h1>
+		<a href="https://omegagames5.github.io/donate.html">Донат</a>
+		<h1>--</h1>
+		<a href="https://omegagames5.github.io/lavalucky">Рулетка LavaLucky</a>
+		<h1>--</h1>
+		<a href="https://omegagames5.github.io/GeometryDashULTIMATE">GeometryDash ULTIMATE</a>
+		<h1>--</h1> -->
+		
+		<h5 align="middle" id="UPDWARN"> <!-- ПУТИВОДИТЕЛЬ --> ИНТЕРФЕЙС БЫЛ ОБНОВЛЁН! </h1>
+		
 	</head>
 	
 	<body>
-	
-	<div align="middle">
-
-<img src="alarm.gif">
-
-	
-	<h1>Обратный отчет времени</h1>
-	<h2>До удаления групп:</h2>
-	<!-- Отображение таймера обратного отсчета в элементе -->
-					<p id="demo">⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰⚠️⏰</p>
-					
-					<a href="https://disk.yandex.ru/d/GVZVMcD0CjV1Iw?w=1" id="backuplink">      </a>
-
-<img src="alarm.gif">
-
-</div>
-<!--="true"="true"src="Sound_15028.mp3"audio/music.mp3Обратный отчет времени-->
-    <audio loop id="Audio1111111111111111" autoplay><source src="Sound_15028.mp3" type="audio/mpeg"></audio>    
-
+		
+		<div align="middle" id="app">
+		
+			<a href="https://omegagames5.github.io/home/" id="lnk">Главная</a>
+			
+			<br>
+			
+			<!-- <h1>--</h1> -->
+			<a href="https://omegagames5.github.io/donate.html" id="lnk">Донат</a>
+			
+			<br>
+			
+			<!-- <h1>--</h1> -->
+			<a href="https://omegagames5.github.io/lavalucky" id="lnk">Рулетка LavaLucky</a>
+			
+			<br>
+			
+			<!-- <h1>--</h1> -->
+			<a href="https://omegagames5.github.io/GeometryDashULTIMATE" id="lnk">GeometryDash ULTIMATE</a>
+			
+			<br>
+			
+			<!-- <h1>--</h1> -->
+		
+		</div>
+		
 	</body>
 	
+	<style>
 	
+		#lnk {
+		
+		
+display: block;
+					border: none;
+					background: #12c2e9;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to left, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: white;
+					outline: none;
+					font-size: 26px;
+					
+		
+		}
+		
+		#app {
 
-<script>
+display: block;
+					border: none;
+					background: #12c2e9;  /* fallback for old browsers */
+					background: -webkit-linear-gradient(to left, #AAFFAA, #c6f6d6, #d67fd6);  /* Chrome 10-25, Safari 5.1-6 */
+					background: linear-gradient(to left, #AAFFAA, #c6f6d6, #d67fd6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+					border-radius: 10px;
+					padding: 20px;
+					color: rgba(000,000,255,255);
+					outline: none;
+					font-size: 26px;
+					
+		}
+	
+		#UPDWARN {
+		
+		
 
-document.getElementById('Audio1111111111111111').play();
-
-//var audio = new Audio('alarm.mp3');
-
-//audio.play();
-
-// Установите дату, до которой мы ведем обратный отсчет
-var countDownDate = new Date("May 10, 2021 04:00:00").getTime();
-
-// Обновляйте обратный отсчет каждые 1 секунду
-var x = setInterval(function() {
-
-  // Получить сегодняшнюю дату и время
-  var now = new Date().getTime();
-
-  // Найти расстояние между сейчас и датой обратного отсчета
-  var distance = countDownDate - now;
-
-  // Расчет времени по дням, часам, минутам и секундам
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-  // Отображение результата в элементе с помощью id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-
-  // Если обратный отсчет завершен, напишите текст
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-    document.getElementById("demo").innerHTML = "⚠️⏰ -- ГРУППА WHATSAPP БЫЛА УДАЛЕННА -- ⚠️⏰";
-    document.getElementById("demo").innerHTML = "⚠️⏰ -- ГРУППА WHATSAPP БЫЛА УДАЛЕННА -- ⚠️⏰";
-    document.getElementById("backuplink").innerHTML = "Резервные копии из чатов";
-    document.getElementById("backuplink").innerHTML = "Резервные копии из чатов";
-  }
-}, 1000);
-
-//var var1 = document.createElement("Sound_15028.mp3");
-
-//var1.loop = true;
-
-//var1.play();//("AUDIO");
-
-</script>
+					
+					background: #AA0000;
+					color: white;
+					
+		
+		}
+		
+	</style>
+	
 </html>
